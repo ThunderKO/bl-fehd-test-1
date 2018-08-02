@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet"> -->
+    <!-- Font Awesome -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
+    <style>
+      .btn {
+        width: 250px;
+        height: 60px;
+        color: #31302B;
+        background: #FFF;
+        padding: 5px 17px;
+        margin: 5px;
+        font-family: 'OpenSansBold', sans-serif;
+        border: 3px solid #31302B;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        border-radius: 2px;
+        display: inline-block;
+        text-align: center;
+        cursor: pointer;
+        box-shadow: inset 0 0 0 0 #31302B;
+        -webkit-transition: all ease 0.8s;
+        -moz-transition: all ease 0.8s;
+        transition: all ease 0.8s;
+      }
+      .btn:hover {
+        box-shadow: inset 400px 0 0 0 #e0e0e0;
+        color: #fff;
+
+      }
+
+      body, html {
+          height: 97%;
+      }
+
+      .hero-image {
+
+          background-image: url("img.png");
+
+
+          height: 100%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+      }
+
+      .hero-text {
+          text-align: center;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: black;
+      }
+      img {
+        height: 100%;
+          animation: fadein 3s;
+          -moz-animation: fadein 3s; /* Firefox */
+          -webkit-animation: fadein 3s; /* Safari and Chrome */
+          -o-animation: fadein 3s; /* Opera */
+      }
+      @keyframes fadein {
+          from {
+              opacity:0;
+          }
+          to {
+              opacity:1;
+          }
+      }
+      .nav-link {
+        text-decoration: none;
+      }
+      a { color: inherit; }
+      a:hover { color: white;}
+    </style>
+    <title></title>
+  </head>
+  <body >
+
+    <!--Navbar-->
+<nav class="navbar navbar-expand-lg default-color lighten-4">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#">Navbar</a>
+
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="basicExampleNav">
+
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+            </li>
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+
+        </ul>
+        <!-- Links -->
+
+        <form class="form-inline">
+            <div class="md-form my-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            </div>
+        </form>
+    </div>
+    <!-- Collapsible content -->
+
+</nav>
+<!--/.Navbar-->
+
+    <div class="hero-image" id="test">
+      <img src="word.png"/>
+    </div>
+
+    <div style="padding-left: 13%; padding-right: 10%;">
+      <div class="row">
+          <div class="col-md-4 col-sm-12">
+              <div class="view zoom" style="width: 300px; height:140px;">
+                  <img src="thumbnail1.jpg" class="img-fluid " alt="">
+                  <div class="mask flex-center rgba-black-light">
+                      <h3 style="color:white; text-align: center;"><i class="fas fa-chalkboard-teacher"></i><b> Getting Started</b></h3>
+                  </div>
+              </div>
+            </div>
+          <div class="col-md-8 col-sm-12">
+              <div class="row">
+                  <div class="col-12 col-lg-6">
+                      <button class="btn">
+                        <a href="https://moodle.eduhk.hk/course/view.php?id=19506&section=1/#structure">
+                          <i class="fas fa-code-branch"></i> Know Moodle structure
+                        </a>
+                      </button>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                      <button class="btn">
+                        <a href="https://moodle.eduhk.hk/course/view.php?id=19506&section=3#file">
+                          <i class="fas fa-file-upload"></i> Upload your course materials
+                        </a>
+                      </button>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-12 col-lg-6">
+                      <btton class="btn">
+                        <a href="https://moodle.eduhk.hk/course/view.php?id=19506&section=2#profile">
+                          <i class="fas fa-user-circle"></i> Update your profile
+                        </a>
+                      </button>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                      <button class="btn">
+                        <a href="https://moodle.eduhk.hk/course/view.php?id=19506&section=4#folder">
+                          <i class="far fa-list-alt"></i> Create a reading list
+                        </a>
+                      </button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-md-4 col-sm-12">
+              <div class="view zoom" style="width: 300px; height:220px;">
+                  <img src="thumbnail2.png" style="background-size: 100%;" class="img-fluid " alt="">
+                  <div class="mask flex-center rgba-black-light">
+                      <h3 style="color:white; text-align: center;"><i class="fas fa-book-reader"></i><b> Getting the Students Involved</b></h3>
+                      <br/>
+                  </div>
+              </div>
+            </div>
+          <div class="col-md-8 col-sm-12">
+              <div class="row">
+                  <div class="col-12 col-lg-6">
+                      <button class="btn">
+                        <a href="https://moodle.eduhk.hk/course/view.php?id=19506&section=5#announcement">
+                          <i class="fas fa-bullhorn"></i> Course announcement
+                        </a>
+                      </button>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                      <button class="btn">
+                        <a href="https://moodle.eduhk.hk/course/view.php?id=19506&section=8#group">
+                          <i class="fas fa-users"></i> Assign students to groups
+                        </a>
+                      </button>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-12 col-lg-6">
+                      <btton class="btn">
+                        <a href="https://moodle.eduhk.hk/course/view.php?id=19506&section=6#chat">
+                          <i class="fas fa-comments"></i> Synchronous discussion
+                        </a>
+                      </button>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                      <button class="btn">
+                        <a href="https://moodle.eduhk.hk/course/view.php?id=19506&section=9#wiki">
+                          <i class="fas fa-globe"></i> Wiki collboration
+                        </a>
+                      </button>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-12 col-lg-6">
+                      <btton class="btn">
+                        <a href="https://moodle.eduhk.hk/course/view.php?id=19506&section=7#forum">
+                          <i class="far fa-comments"></i> Forum discussion
+                        </a>
+                      </button>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                      <button class="btn">
+                        <a href="https://moodle.eduhk.hk/course/view.php?id=19506&section=10#glossary">
+                          <i class="fab fa-elementor"></i> Glossary collboration
+                        </a>
+                      </button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-md-4 col-sm-12">
+              <div class="view zoom" style="width: 300px; height:140px;">
+                  <img src="thumbnail3.jpg" class="img-fluid " alt="">
+                  <div class="mask flex-center rgba-black-light">
+                      <h3 style="color:white; text-align: center;"><i class="fas fa-chart-line"></i><b> Creating Online Assessment</b></h3>
+                  </div>
+              </div>
+            </div>
+          <div class="col-md-8 col-sm-12">
+              <div class="row">
+                  <div class="col-12 col-lg-6">
+                      <button class="btn">
+                        <a href="https://moodle.eduhk.hk/course/view.php?id=19506&section=11#gradebook">
+                          <image src="gradebook.svg" style="width: 15px; height: 15px;"> View Gradebook
+                        </a>
+                      </button>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                      <button class="btn">
+                        <a href="https://moodle.eduhk.hk/course/view.php?id=19506&section=13#quiz">
+                          <i class="fas fa-clipboard-check"></i> Online quiz
+                        </a>
+                      </button>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-12 col-lg-6">
+                      <btton class="btn">
+                        <a href="https://moodle.eduhk.hk/course/view.php?id=19506&section=12#assignment">
+                          <image src="turnitin_icon.svg" style="width: 15px; height: 15px;"> Turnitin assignment
+                        </a>
+                      </button>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                      <button class="btn">
+                        <a href="https://moodle.eduhk.hk/course/view.php?id=19506&section=14#workshop">
+                          <i class="fas fa-address-book"></i> Peer assessment
+                        </a>
+                      </button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 col-sm-12">
+            <div class="view zoom" style="width: 300px; height:140px;">
+                <img src="thumbnail4.jpg" class="img-fluid" alt="">
+                <div class="mask flex-center rgba-black-light">
+                    <h3 style="color:white; text-align: center;"><i class="fas fa-sync-alt"></i><b> Reusing the Course Content<b/></h3>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-8 col-sm-12">
+              <div class="row">
+                  <div class="col-12 col-lg-6">
+                      <button class="btn">
+                        <a href="https://moodle.eduhk.hk/course/view.php?id=19506&section=15#export">
+                          <i class="fas fa-sign-out-alt"></i> Backup the current course
+                        </a>
+                      </button>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-12 col-lg-6">
+                      <btton class="btn">
+                        <a href="https://moodle.eduhk.hk/course/view.php?id=19506&section=16#import">
+                          <i class="fas fa-sign-in-alt"></i> Import to a new course
+                        </a>
+                      </button>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
