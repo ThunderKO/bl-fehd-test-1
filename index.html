@@ -40,115 +40,53 @@
       }
 
       body, html {
-          height: 97%;
+          height: 100%;
       }
 
       .hero-image {
-
-          background-image: url("img.png");
-
-
-          height: 100%;
-          background-position: center;
-          background-repeat: no-repeat;
+          background: url("hero.png") no-repeat center;
+          height: 800px;
           background-size: cover;
           position: relative;
       }
 
-      .hero-text {
-          text-align: center;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          color: black;
-      }
-      img {
-        height: 100%;
-          animation: fadein 3s;
-          -moz-animation: fadein 3s; /* Firefox */
-          -webkit-animation: fadein 3s; /* Safari and Chrome */
-          -o-animation: fadein 3s; /* Opera */
-      }
-      @keyframes fadein {
-          from {
-              opacity:0;
-          }
-          to {
-              opacity:1;
-          }
-      }
       .nav-link {
         text-decoration: none;
       }
       a { color: inherit; }
       a:hover { color: white;}
+
     </style>
     <title></title>
   </head>
   <body >
 
-    <!--Navbar-->
-<nav class="navbar navbar-expand-lg default-color lighten-4">
-
-    <!-- Navbar brand -->
-    <a class="navbar-brand" href="#">Navbar</a>
-
-    <!-- Collapse button -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="basicExampleNav">
-
-        <!-- Links -->
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home
-                    <span class="sr-only">(current)</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-            </li>
-
-            <!-- Dropdown -->
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-            </li>
-
-        </ul>
-        <!-- Links -->
-
-        <form class="form-inline">
-            <div class="md-form my-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            </div>
-        </form>
-    </div>
-    <!-- Collapsible content -->
-
-</nav>
-<!--/.Navbar-->
-
-    <div class="hero-image" id="test">
-      <img src="word.png"/>
+    <div class="pos-f-t">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <h4 class="text-white">Collapsed content</h4>
+          <span class="text-muted">Toggleable via the navbar brand.</span>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
     </div>
 
-    <div style="padding-left: 13%; padding-right: 10%;">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="hero-image">
+        </div>
+      </div>
+    </div>
+
+
+    <div>
       <div class="row">
           <div class="col-md-4 col-sm-12">
-              <div class="view zoom" style="width: 300px; height:140px;">
+              <div class="view zoom">
                   <img src="thumbnail1.jpg" class="img-fluid " alt="">
                   <div class="mask flex-center rgba-black-light">
                       <h3 style="color:white; text-align: center;"><i class="fas fa-chalkboard-teacher"></i><b> Getting Started</b></h3>
@@ -174,7 +112,7 @@
               </div>
               <div class="row">
                   <div class="col-12 col-lg-6">
-                      <button class="btn">
+                      <btton class="btn">
                         <a href="https://moodle.eduhk.hk/course/view.php?id=19506&section=2#profile">
                           <i class="fas fa-user-circle"></i> Update your profile
                         </a>
@@ -193,7 +131,7 @@
 
       <div class="row">
           <div class="col-md-4 col-sm-12">
-              <div class="view zoom" style="width: 300px; height:220px;">
+              <div class="view zoom">
                   <img src="thumbnail2.png" style="background-size: 100%;" class="img-fluid " alt="">
                   <div class="mask flex-center rgba-black-light">
                       <h3 style="color:white; text-align: center;"><i class="fas fa-book-reader"></i><b> Getting the Students Involved</b></h3>
@@ -255,7 +193,7 @@
 
       <div class="row">
           <div class="col-md-4 col-sm-12">
-              <div class="view zoom" style="width: 300px; height:140px;">
+              <div class="view zoom">
                   <img src="thumbnail3.jpg" class="img-fluid " alt="">
                   <div class="mask flex-center rgba-black-light">
                       <h3 style="color:white; text-align: center;"><i class="fas fa-chart-line"></i><b> Creating Online Assessment</b></h3>
@@ -300,7 +238,7 @@
 
       <div class="row">
         <div class="col-md-4 col-sm-12">
-            <div class="view zoom" style="width: 300px; height:140px;">
+            <div class="view zoom">
                 <img src="thumbnail4.jpg" class="img-fluid" alt="">
                 <div class="mask flex-center rgba-black-light">
                     <h3 style="color:white; text-align: center;"><i class="fas fa-sync-alt"></i><b> Reusing the Course Content<b/></h3>
@@ -329,5 +267,8 @@
           </div>
       </div>
     </div>
+
+
   </body>
 </html>
+
